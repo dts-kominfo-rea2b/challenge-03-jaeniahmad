@@ -34,7 +34,7 @@ const listBelanjaan = function() {
 };
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-const totalBelanjaan = () => {
+const totalBelanjaan = (dataBelanjaan) => {
   let sum = 0;
 
   dataBelanjaan.forEach(element => {
