@@ -23,7 +23,7 @@ const dataBelanjaan = [
 console.log(dataBelanjaan);
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-const listBelanjaan = function() {
+const listBelanjaan = function(dataBelanjaan) {
 
  let list = dataBelanjaan.map(barang => {
    return '- ' + barang.nama + " x " + barang.kuantitas;
