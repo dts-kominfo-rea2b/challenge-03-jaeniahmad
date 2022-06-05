@@ -24,9 +24,9 @@ console.log(dataBelanjaan);
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const listBelanjaan = function(dataBelanjaan) {
-
+  
  let list = dataBelanjaan.map(barang => {
-   return '- ' + barang.nama + " x " + barang.kuantitas;
+   return `- ${barang.nama} x ${barang.kuantitas}`;
  })
 
  return list;
