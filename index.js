@@ -33,7 +33,13 @@ const listBelanjaan = function() {
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const totalBelanjaan = () => {
+  let sum = 0;
 
+  dataBelanjaan.forEach(element => {
+    sum += element.harga*element.kuantitas;
+  });
+
+  return sum;
 }
 
 // ! JANGAN DIMODIFIKASI
